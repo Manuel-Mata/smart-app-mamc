@@ -12,19 +12,9 @@ List<Movie> mockMovies = [
     color1: Colors.blue,
     color2: Colors.blue[300]!,
     icon: Icons.movie,
+    porterUrl:
+        'https://m.media-amazon.com/images/M/MV5BYmVlNWFjODUtZDA2Yi00MmRkLTk5NWQtMGQ3MDJjYTRlZWFiXkEyXkFqcGc@._V1_.jpg',
   ),
-  Movie(
-    title: 'The Shawshank Redemption',
-    year: '1994',
-    genre: 'Drama',
-    description:
-        'Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.',
-    rating: 9.3,
-    color1: Colors.blue,
-    color2: Colors.blue[300]!,
-    icon: Icons.movie,
-  ),
-
   Movie(
     title: 'The Godfather',
     year: '1972',
@@ -35,6 +25,8 @@ List<Movie> mockMovies = [
     color1: Colors.red,
     color2: Colors.red[300]!,
     icon: Icons.movie,
+    porterUrl:
+        'https://www.imfdb.org/images/thumb/4/4d/Godfather.jpg/600px-Godfather.jpg',
   ),
 
   Movie(
@@ -47,6 +39,8 @@ List<Movie> mockMovies = [
     color1: Colors.black,
     color2: Colors.grey[700]!,
     icon: Icons.movie,
+    porterUrl:
+        'https://image.tmdb.org/t/p/original/3Z5y3P6CLweBgXazo5V2iebq28H.jpg',
   ),
 
   Movie(
@@ -59,6 +53,8 @@ List<Movie> mockMovies = [
     color1: Colors.orange,
     color2: Colors.orange[300]!,
     icon: Icons.movie,
+    porterUrl:
+        'https://streamcoimg-a.akamaihd.net/000/136/9859/1369859-PosterArt-e1a2c9e43304c06095a6a9c817534afd.jpg',
   ),
 
   Movie(
@@ -71,6 +67,8 @@ List<Movie> mockMovies = [
     color1: Colors.green,
     color2: Colors.green[300]!,
     icon: Icons.movie,
+    porterUrl:
+        'https://hexdl.com/wp-content/uploads/2023/01/Forrest-Gump-1994-poster.jpg',
   ),
 
   Movie(
@@ -83,6 +81,8 @@ List<Movie> mockMovies = [
     color1: Colors.purple,
     color2: Colors.purple[300]!,
     icon: Icons.movie,
+    porterUrl:
+        'https://i.pinimg.com/736x/c3/eb/49/c3eb4901dda740d22185dab197617912.jpg',
   ),
 
   Movie(
@@ -95,6 +95,8 @@ List<Movie> mockMovies = [
     color1: Colors.teal,
     color2: Colors.teal[300]!,
     icon: Icons.movie,
+    porterUrl:
+        'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgh_tO6IOTteppTTWWl53oLTlsn4PNQloV0CEm6CoME2dzriCApMnIMK4AgGkUyu2yr_WhtzmUbWm9nXTOKGaIj-xv5A-l2YOPZAJgorOBfKLwuRrzxJUF2wijnx0PYRA6zyGQl/s1600/The+Matrix+(1999).jpg',
   ),
 
   Movie(
@@ -107,6 +109,8 @@ List<Movie> mockMovies = [
     color1: Colors.indigo,
     color2: Colors.indigo[300]!,
     icon: Icons.movie,
+    porterUrl:
+        'https://i.pinimg.com/originals/8e/0d/ab/8e0dab8699be85720ce55845065bf6dc.jpg',
   ),
 
   Movie(
@@ -119,6 +123,7 @@ List<Movie> mockMovies = [
     color1: Colors.brown,
     color2: Colors.brown[300]!,
     icon: Icons.movie,
+    porterUrl: 'https://images.static-bluray.com/products/20/1309_1_large.jpg',
   ),
 
   Movie(
@@ -131,5 +136,7 @@ List<Movie> mockMovies = [
     color1: Colors.pink,
     color2: Colors.pink[300]!,
     icon: Icons.movie,
+    porterUrl:
+        'https://cdn.posteritati.com/posters/000/000/069/488/spirited-away-md-web.jpg',
   ),
 ];

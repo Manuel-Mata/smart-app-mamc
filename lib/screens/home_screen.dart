@@ -1,5 +1,8 @@
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:smart_app/data/mock_movied.dart';
+import 'package:smart_app/widgets/movie_card.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -13,36 +16,40 @@ class HomeScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              //Titulo
+              //
               Row(
                 children: [
-                  Icon(Icons.favorite, size: 32, color: Colors.red),
-                  SizedBox(width: 12),
+                  Icon(Icons.favorite, color: Colors.red, size: 32),
+                  SizedBox(width: 32),
                   Text(
-                    'Mis Peliculas Favoritas',
+                    'Mis películas favoritas',
                     style: TextStyle(fontSize: 28, fontWeight: FontWeight.w400),
                   ),
                 ],
               ),
 
-              //Listado de peliculas
+              // Listado de películas
               Expanded(
                 child: GridView.builder(
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 4,
-                    crossAxisSpacing: 24,
                     mainAxisSpacing: 24,
-                    childAspectRatio: 0.7,
+                    crossAxisSpacing: 18,
+                    childAspectRatio: 0.8,
                   ),
-                  itemCount: mockMovies.length, // Número de películas
                   itemBuilder: (context, index) {
                     final movie = mockMovies[index];
-                    return MovieCard(
-                      movie: movie,
-                      onSelect: () {
-                        // Handle movie selection
-                      },
-                      autofocus: false,
+                    return FadeInUp(
+                      child: Container(
+                        padding: EdgeInsets.symmetric(horizontal: 10),
+                        child: MovieCard(
+                          movie: movie,
+                          onSelect: () {
+                            context.push('/detail');
+                          },
+                          autofocus: index == 0,
+                        ),
+                      ),
                     );
                   },
                 ),
