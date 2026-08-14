@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:smart_app/models/movie.dart';
+import 'package:smart_app_mamc/models/movie.dart';
 
 class MovieCard extends StatefulWidget {
   final Movie movie;

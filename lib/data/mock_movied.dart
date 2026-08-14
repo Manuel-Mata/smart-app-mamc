@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:smart_app/models/movie.dart';
+import 'package:smart_app_mamc/models/movie.dart';
 
 List<Movie> mockMovies = [
   Movie(

@@ -1,8 +1,8 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:smart_app/data/mock_movied.dart';
-import 'package:smart_app/widgets/movie_card.dart';
+import 'package:smart_app_mamc/data/mock_movied.dart';
+import 'package:smart_app_mamc/widgets/movie_card.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -45,7 +45,7 @@ class HomeScreen extends StatelessWidget {
                         child: MovieCard(
                           movie: movie,
                           onSelect: () {
-                            context.push('/detail');
+                            context.push('/detail', extra: movie);
                           },
                           autofocus: index == 0,
                         ),
